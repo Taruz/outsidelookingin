@@ -163,7 +163,7 @@ p2 {
     100% { transform: rotate(360deg); }
 }
 .hide {
-  display: none !important;
+  display: none;
 }
 
 @media only screen and (min-width: 1001px)  /* DESKTOP */ {

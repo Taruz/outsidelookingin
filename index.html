@@ -12,13 +12,13 @@
 <body>
 
 
-  <aside class="loading hide">
+  <aside class="loading">
     <img src="img/loading.svg">
   </aside>
   <div class="bar"></div>
   <main class="slides">
   <div id="slide-1" class="slide show"><div class="loader"><div class="circle"></div></div>
-  <div class="bg" style="background-image: url('img/1.jpg'); background-size:cover;"><!--<img src="img/1.jpg" style="max-height: 100%;">--><div class="pil"><img src="img/svart_pil.svg"></div></div><div class="info"><img src="img/info.svg"></div></div></div>
+  <div class="bg" style="background-image: url('img/1.jpg'); background-size:cover;"><!--<img src="img/1.jpg" style="max-height: 100%;">--></div><div class="info"><img src="img/info.svg"></div><div class="pil"><img src="img/svart_pil.svg"></div></div></div>
   <div id="slide-2" class="slide"><div class="loader"><div class="circle"></div></div>
   <div class="bg"><img src="img/2.jpg" style="max-height: 100%;"></img><div class="pil"><img src="img/svart_pil.svg"></div></div><div class="info"><img src="img/info.svg"></div></div></div>
   <div id="slide-3" class="slide"><div class="loader"><div class="circle"></div></div>
@@ -82,14 +82,14 @@
     EN&nbsp;&nbsp;&nbsp;&nbsp;This website can not be viewed inside kulturhuset. To view the website, exit the building and reload the site.</div>
   </div>
 
-<!-- <script src="blockKulturhuset.js"></script> -->
+<script src="blockKulturhuset.js"></script>
 
 <script>$('.pil').on('click', function(){
-    $(this).parent().parent().removeClass('show');
-    if ($(this).parent().parent().nextUntil().length == 0) {
-      $(this).parent().parent().parent().children().first().addClass('show');
+    $(this).parent().removeClass('show');
+    if ($(this).parent().nextUntil().length == 0) {
+      $(this).parent().parent().children().first().addClass('show');
     } else {
-      $(this).parent().parent().next().addClass('show')
+      $(this).parent().next().addClass('show')
     }
   })
 
