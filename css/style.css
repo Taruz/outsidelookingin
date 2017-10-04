@@ -8,7 +8,7 @@ body {
   max-height: 100%;
   overflow-y: hidden;
   font-size: 1em;
-  line-height: 1.2em;
+  line-height: 1.4em;
   letter-spacing: -0.01em;
   width: 500vw;
 }
@@ -83,10 +83,11 @@ p {
   margin-top: 15px;
   margin-left: 15px;
 }
-#slide-1-text p{
+#slide-1-text p, #slide-2-text p, #slide-3-text p, #slide-4-text p, #slide-5-text p {
   width: 30%;
 }
-#info-text p{
+
+#info-text p {
   width: 50%;
 }
 p2 {
