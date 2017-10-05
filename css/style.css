@@ -204,7 +204,9 @@ body {
 @media only screen and (max-width: 1000px) /* MOBILE */ {
   body {
    overflow-x: hidden;
-   font-size: 1.2em;
+    font-size: 1.6em;
+    line-height: 1.4em;
+    letter-spacing: -0.01em;
   }
   #slide-1-text p, #slide-2-text p, #slide-3-text p, #slide-4-text p, #slide-5-text p{
     width: 70%;
@@ -254,9 +256,6 @@ body {
     margin-top: 15px;
     margin-left: 15px;
     width: 80%;
-    font-size: 1.6em;
-    line-height: 1.4em;
-    letter-spacing: -0.01em;
   }
   .text img {
     float: right;
